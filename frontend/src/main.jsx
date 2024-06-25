@@ -10,11 +10,13 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import HomeScreen from "./screens/HomeScreen.jsx";
+import LoginScreen from "./screens/LoginScreen.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route path="/" index={true} element={<HomeScreen />} />
+      <Route path="/login" element={<LoginScreen />} />
     </Route>
   )
 );
